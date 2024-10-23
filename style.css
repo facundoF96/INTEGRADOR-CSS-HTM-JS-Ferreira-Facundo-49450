@@ -1,0 +1,310 @@
+/* GENERALES */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik",
+  sans-serif;
+}
+
+/* HEADER */
+
+.container_principalHeader{
+  width: 100vw;
+  height: 8vh;
+  background-color: rgb(121, 121, 228);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container_contentHeader{
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem;
+}
+
+.headerSearch{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1vh;
+}
+
+.inputHeader{
+  border-radius: 0.4rem;
+  border: none;
+  padding: 0.4rem;
+  outline: none;
+  font-size: 1.7vh;
+  height: 2vh;
+  width: 20vw;
+}
+
+.buttonSearch{
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  width: 14vw;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonSearch:hover{
+  cursor: pointer;
+  background-color: rgb(198, 198, 243);
+}
+
+.header_buttonAdd{
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  width: 14vw;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_buttonAdd:hover{
+  cursor: pointer;
+  background-color: rgb(198, 198, 243);
+}
+
+/* MAIN */
+
+.container_view{
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr;
+}
+
+.listAside{
+  height: 92vh;
+}
+
+/* STORE */
+
+.store{
+  background-color: rgb(199, 193, 193);
+  max-height: 92vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.sectionStore{
+  background-color: white;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.sectionStore img{
+  width: 100%;
+  height: 35vh;
+  border-radius: 0.4rem;
+}
+
+.containerTitleSection{
+  margin: 1rem;
+  font-size: 3vh;
+  border-bottom: 1px solid grey;
+}
+
+.containerProductStore{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 2vh;
+}
+
+.containterTargetItem{
+  width: 25vw;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.4rem;
+  box-shadow: 2px 2px 3px 3px;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: 0.2s ease;
+}
+
+.containterTargetItem:hover{
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.containterTargetItem h2{
+  font-size: 3vh;
+  text-align: center;
+}
+
+.targetProps{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* LISTASIDE */
+
+.listAside{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.listAside h2 {
+  display: flex;
+  font-size: 3vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.listAside ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  gap: 1vh;
+}
+
+.listAside ul li {
+  font-size: 2vh;
+  font-weight: 500;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.listAside ul li:hover{
+  cursor: pointer;
+  background-color: rgb(121, 121, 228);
+  color: white;
+}
+
+.liActivo {
+  text-decoration: underline;
+  background-color: rgb(121, 121, 228);
+  color: white;
+}
+
+/* POP UP */
+
+.popUpContainerPrincipal{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+
+.popUpContainer{
+  width: 50vw;
+  height: 50vh;
+  background-color: white;
+  box-shadow: 5px 2px 10px 10px rgba(o, o, o, 0.3);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.containterTituloPopUp{
+  width: 100%;
+  text-align: center;
+}
+
+.containerInputs_Pop{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+.containerInputs_Pop input, select{
+  width: 60%;
+  border: 1px solid gray;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.containterButtonsPopUp{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.buttonPopUp {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 2vh;
+}
+
+.cancel{
+  background-color: rgb(184, 181, 181);
+  transition: 0.2s ease
+}
+
+.accept{
+  background-color: greenyellow;
+  transition: 0.2s ease
+}
+
+.delete{
+  background-color: rgb(245, 67, 67);
+  transition: 0.2s ease
+}
+
+.cancel:hover{
+  cursor: pointer;
+  background-color: gray;
+  transform: scale(1.08);
+}
+
+.accept:hover{
+  cursor: pointer;
+  background-color: green;
+  transform: scale(1.08);
+}
+
+.delete:hover{
+  cursor: pointer;
+  background-color: red;
+  transform: scale(1.08);
+}
+
+/* ScrollBar */
+
+::-webkit-scrollbar{
+  width: 0.5rem;
+  background-color: white;
+  border-radius: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(121, 121, 228);
+  border-radius: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(160, 160, 235);
+}
